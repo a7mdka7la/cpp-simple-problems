@@ -94,6 +94,7 @@ int main() {
 */
 
 
+/*Display N grams in the form of number of kilograms and number of left grams.
 int main() {
 	int grams,remainder;
 	int kilo;
@@ -102,6 +103,6 @@ int main() {
 	cout << "here's the number of kilos: " << kilo << "\n";
 	cout << "and here's the number of remainder: " << remainder;
 };
-
+*/
 
 
