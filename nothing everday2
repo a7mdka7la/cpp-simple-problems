@@ -1,0 +1,125 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+
+
+
+
+
+
+/* Grades system 
+int main() {
+	int grades[100],index = 0,grade,valid = 0,invalid = 0,sum = 0;
+	cout << "enter grades, press -1 to stop: " << "\n"; cin >> grade;
+	while (grade != -1) {
+		grades[index] = grade;
+		index++;
+		cin >> grade;
+	}
+	cout << "valid/invalid list: " << "\n";
+	for (int i = 0; i < index; i++) {
+		if (grades[i] >= 0 && grades[i] <= 100) {
+			cout << "valid grade" << "\n";
+			sum += grades[i];
+			valid++;
+		}
+		else
+		{
+			cout << "invalid grade" << "\n";
+			invalid++;
+		}
+	}
+	if (valid > 0) {
+		cout << "average grade: " << float(sum)/valid << "\n";
+	}
+	else
+	{
+		cout << "can't calualte because of invalid input" << "\n";
+	}
+	int max = -1, min = 101, maxindex,minindex;
+	for (int i = 0; i < index; i++) {
+		if (grades[i] > max) {
+			max = grades[i];
+			maxindex = i;
+		}
+		if (grades[i] < min) {
+			min = grades[i];
+			minindex = i;
+		}
+	}
+	cout << "highest grade is: " << max << " at index: " << maxindex << "\n";
+	cout << "lowest grade is: " << min << " at index: " << minindex << "\n";
+};
+*/
+
+
+/* Write a program that reads two strings S1 and S2 and checks whether S1
+and S2 are identical. If they are identical, print “Identical Strings”. Otherwise,
+print all locations at which mismatches are found.
+
+int main() {
+	string s1, s2;
+	int count = 0;
+	cout << "type two strings: " << "\n"; getline(cin, s1); getline(cin, s2);
+	for (int i = 0; i < s1.length(); i++) {
+		if (s1[i] == s2[i]) {
+			count++;
+		}
+		else
+		{
+			cout << "mismatch at index " << i << "\n";
+		}
+	 }
+	if (count == s1.length()) {
+		cout << "identical string";
+	}
+};
+*/
+
+
+
+/*
+int main() {
+	int n;
+	cin >> n;
+	int* A = new int[n];
+	int* B = new int[n];
+
+	for (int i = 0; i < n; i++) {
+		cin >> A[i];
+	}
+
+	for (int i = 0; i < n; i++) {
+		B[i] = A[i] * A[i];
+	}
+
+	for (int i = 0; i < n; i++) {
+		cout << B[i] << " ";
+	}
+	cout << endl;
+	delete[] A;
+	delete[] B;
+	return 0;
+}
+*/
+
+
+
+
+
+/* get the square root of five numbers
+int main() {
+	int x, n[5],n2[5];
+	string nums = " ";
+	cout << "enter five numbers: " << "\n";
+	for (int i = 0; i < 5; i++) {
+		cin >> n[i];
+		x = pow(n[i], 2);
+		cout <<"the square of this number is: " << x << "\n";
+	}	
+}
+*/
