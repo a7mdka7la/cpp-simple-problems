@@ -1,0 +1,195 @@
+#include<iostream>
+#include<string>
+#include <cmath>
+using namespace std;
+
+
+
+
+/* Write a program that reads the coefficients(a, b, c) of the quadratic equation
+ax2 + bx + c = 0. The program computes the roots(x1 and x2) if they exist.The
+roots of the equations can be one of the following four cases :
+● any x is a solution(if a = b = c = 0)
+● no solution(if a = b = 0, c ~= 0)
+● one real root(if a = 0, so the root is −c / b)
+
+x1, x2 =−b ± √b2 − 4ac / 2a
+
+
+int main() {
+	int a, b, c;
+	cout << "enter the coeffiecients of the quadratic equation: " << "\n";
+	cin >> a >> b >> c;
+	if (a == 0) {
+		if (b == 0) {
+			if (c == 0) {
+				cout << "any x is a solution " << "\n";
+			}
+			else
+			{
+				cout << "no solution for x";
+			}
+		}
+		float x = -c / b;
+		cout << "here's the x: " << x << "\n";
+	}
+	else
+	{
+		float underroot = b * b - 4 * a * c;
+		if (underroot > 0) {
+			float x1 = (-b + sqrt(underroot)) / (2 * a);
+			float x2 = (-b - sqrt(underroot)) / (2 * a);
+			cout << "here's you x's homeless: " << x1 << " " << x2 << "\n";
+		}
+		else
+		{
+			cout << "solution has complex values";
+		}
+	}
+}
+
+
+
+
+
+/* Write a program to convert the weight from mg, Kg, Ton to Gram upon the
+user choice. If the user enters a negative numbers, the program prints an error
+message (Invalid weight). If the user enters a wrong selection, the program
+prints an error message (Invalid unit). The program can be executed 5 times.
+
+int main() {
+	int x,i = 0;
+	float weight;
+	while (i < 5)
+	{
+		i++;
+		cout << "enter weight: "; cin >> weight;
+		if (weight > 0) {
+			cout << "for mg press : 1 - for kg press : 2 - for ton press : 3: "; cin >> x;
+			if (x == 1) {
+				cout << "converting mg to gram: " << (weight / 1000) << "\n";
+			}
+			else if (x == 2) {
+				cout << "converting kg to gram: " << (weight * 1000) << "\n";
+			}
+			else if (x == 3) {
+				cout << "converting ton to gram: " << (weight * 907200) << "\n";
+			}
+			else
+			{
+				cout << "invalid unit" << "\n";
+			}
+		}
+		else
+		{
+			cout << "invalid weight" << "\n";
+		}
+	}
+};
+*/
+
+
+/* joy invited his friends to a party, he received many presents.If anyone brought
+him something in his mind he will be over the moonand will send that friend a
+message to thank him.
+
+int main() {
+	string freinds[5],presents[5],mind;
+	cout << "what is the name of your freinds ? " << "\n";
+	for (int i = 0; i < 5; i++) {
+		cin >> freinds[i];
+	}
+	cout << "what is the kind of presents you got ? " << "\n";
+	for (int i = 0; i < 5; i++) {
+		cin >> presents[i];
+	}
+	cout << "what is in your mind ?" << "\n";
+	cin >> mind;
+	for (int i = 0; i < 5; i++) {
+		if (mind == presents[i]) {
+			cout << "thanks " << freinds[i] << " for the " << mind; 
+		}
+	}
+}
+*/
+
+
+
+/* Write a Python program that iterates through the integers from 0 to N (Read N from
+the user). For multiples of three it prints "Fizz" instead of the number and for the
+multiples of five it prints "Buzz". For numbers that are multiples of both three and five
+it prints "FizzBuzz".
+
+int main() {
+	int N;
+	cout << "enter number: "; cin >> N;
+	for (int i = 0; i < N; i++) {
+		if (i % 3 == 0 && i % 5 != 0) {
+			cout << "fizz" << "\n";
+			continue;
+		}
+		else if (i % 5 == 0 && i % 3 != 0) {
+			cout << "buzz" << "\n";
+		}
+		else if (i % 5 ==0 && i % 3 ==0)
+		{
+			cout << "fizz buzz" << "\n";
+		}
+		else
+		{
+			cout << i << "\n";
+		}
+	}
+};
+*/
+
+
+
+/* bubble sorting algorithm 
+int main() {
+	int nums[7];
+	cout << "enter the numbers: " << "\n";
+	for (int i = 0; i <= 6; i++) {
+		cin >> nums[i];
+	}
+	for (int i = 0; i <= 5; i++) {
+		for (int j = i+1; j <= 6; j++) {
+			if (nums[i] > nums[j]) {
+				nums[i] = nums[i] + nums[j];
+				nums[j] = nums[i] - nums[j];
+				nums[i] = nums[i] - nums[j];
+			}
+		}
+	}
+	cout << "the ascending order is: " << "\n";
+	for (int i = 0; i < 7; i++) {
+		cout << nums[i] << "  ";
+	}
+};
+*/
+
+
+
+/* Nany had a project with her colleagues, she waited until all team members
+attended and saw if anyone brought the battery otherwise she would bring it for them
+to start working.
+
+int main() {
+	string str[4];
+	int count = 0;
+	cout << "enter what you bringt: " << "\n";
+	for (int i = 0; i < 4; i++) {
+		cin >> str[i];
+		if (str[i] == "battery") {
+			count++;
+		}
+	}
+	if (count == 1) {
+		cout << "i don't need to bring the battery";
+	}
+	else
+	{
+		cout << "i need to bring the battery";
+	}
+}
+*/
